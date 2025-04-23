@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "AppMob",
-    "slug": "AppMob",
+    "name": "E-Mergency",
+    "slug": "EMergency",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/icons/logoapp.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,8 +13,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/icons/logoapp.png",
         "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "extra": {
+      "fontAssets": {
+        "Montserrat-SemiBold": "./assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf",
+        "Montserrat-Thin": "./assets/fonts/Montserrat/static/Montserrat-Thin.ttf"
       }
     },
     "web": {
@@ -27,13 +34,23 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "image": "./assets/images/splashscreen.png",
+          "imageWidth": "100%",
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#F05050",
+          "enableFullScreenImage_legacy": true
         }
-      ]
-    ],
+      ],
+    [
+      "expo-font",
+      {
+        "fonts" :[
+          "./assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf",
+          "./assets/fonts/Montserrat/static/Montserrat-Thin.ttf"
+        ]
+      }
+    ]
+  ],
     "experiments": {
       "typedRoutes": true
     }
